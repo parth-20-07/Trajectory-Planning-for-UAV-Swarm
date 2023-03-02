@@ -3,7 +3,6 @@
 - [Introduction](#introduction)
 - [How to setup the project](#how-to-setup-the-project)
     - [Install Essential Softwares[^1]](#install-essential-softwares%5E1)
-    - [Setup Dependencies](#setup-dependencies)
 - [Designer Details](#designer-details)
 - [License](#license)
 
@@ -18,18 +17,14 @@
 [^1]: All the Softwares are installed for Ubuntu 20.04 LTS. Though most of the softwares are cross platform, we haven't built or tested them for it. You can port it to the system of your liking but maybe try to debug the issues with loads of help from [google](www.google.com).
 
 - Install [ROS 1 Noetic](./Docs/Install%20ROS%20Noetic.md).
-<!-- - Setup [Crazyflie 2.0 in Gazebo](./Docs/Gazebo-Crazyflie.md). -->
-- Setup [Unity](./Docs/Setup%20Unity.md).
+- Setup [Crazyflie 2.0 in Gazebo](./Docs/Gazebo-Crazyflie.md).
+- Setup [Unity](./Docs/Setup%20Unity.md) and [install all the essential packages](./Docs/Install%20Essential%20Unity%20Packages.md).
 - Install [Visual Studio Code](./Docs/VSCode.md).
 
-## Setup Dependencies
 
-- Connect [Unity and ROS](./Docs/Link%20Unity%20and%20ROS.md).
-- Setup [Quadrotors](./Docs/Setup%20Drones.md) in Unity.
-
-🥳 _Ladies and Gentlemen!!_ \
+<!-- 🥳 _Ladies and Gentlemen!!_ \
 🥳 _Hope you have a good day!!_\
-🥳 _We are all done with the project here!!_
+🥳 _We are all done with the project here!!_ -->
 
 # Designer Details
 
