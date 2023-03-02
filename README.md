@@ -65,7 +65,7 @@ Detailed development is explained [here](./Docs/Code%20Explaination/Drone%20Simu
 
 - Designed for:
   - Worcester Polytechnic Institute
-  - RBE550-S23-S01: Motion Planning (Online) - Final Project
+  - RBE550-S23-S02: Motion Planning (Offline) - Final Project
 - Designed by:
   - [Parth Patel](mailto:parth.pmech@gmail.com)
 
