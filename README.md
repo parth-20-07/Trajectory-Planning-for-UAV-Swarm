@@ -29,23 +29,34 @@
 
 # Code Explanation
 
-This is a general idea of how the code flows. We have 3 tiers of drones which fly one after another to perform the operations in sequence and need.
+**General Representation of the control flow looks like as shown:**
 
 ```mermaid
 stateDiagram
-[*] --> Start
-Start --> Global_Planner(ROS)
+[*] --> Start_Position
+Start_Position --> Global_Planner(ROS)
+Start_Position --> Drone_1
+Start_Position --> Drone_2
+Start_Position --> Drone_3
+Start_Position --> Drone_4
+Start_Position --> Drone_5
 Global_Planner(ROS) --> MasterController.cs: ROS-TCP Bridge
-MasterController.cs --> Global_Planning_Drone: Coordinates
-MasterController.cs --> Search_Drone: Coordinates
-MasterController.cs --> Retrieval_Drone: Coordinates
-Global_Planning_Drone --> Global_Planner(ROS): CameraFeed
-Search_Drone --> Global_Planner(ROS): CameraFeed
-Retrieval_Drone --> Global_Planner(ROS): CameraFeed
-Global_Planning_Drone --> Search_Drone: Search Pattern
-Search_Drone --> Retrieval_Drone: Search Coordinates
-Retrieval_Drone --> Stop
-Stop --> [*]
+MasterController.cs --> Drone_1: Coordinates
+MasterController.cs --> Drone_2: Coordinates
+MasterController.cs --> Drone_3: Coordinates
+MasterController.cs --> Drone_4: Coordinates
+MasterController.cs --> Drone_5: Coordinates
+Drone_1 --> Global_Planner(ROS): Camera Feed
+Drone_2 --> Global_Planner(ROS): Camera Feed
+Drone_3 --> Global_Planner(ROS): Camera Feed
+Drone_4 --> Global_Planner(ROS): Camera Feed
+Drone_5 --> Global_Planner(ROS): Camera Feed
+Drone_1 --> End_Position: Reach
+Drone_2 --> End_Position: Reach
+Drone_3 --> End_Position: Reach
+Drone_4 --> End_Position: Reach
+Drone_5 --> End_Position: Reach
+End_Position --> [*]
 ```
 
 
